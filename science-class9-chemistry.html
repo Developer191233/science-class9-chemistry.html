@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acids, Bases and Salts</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon for the page -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'FrenchScript MT', cursive;
+            background: linear-gradient(120deg, rgba(255, 69, 96, 1), rgba(255, 196, 0, 1), rgba(0, 176, 255, 1));
+            background-size: 300% 300%;
+            animation: gradientMove 10s ease infinite;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1, h2 {
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #fff;
+        }
+
+        p, ul, table {
+            margin: 10px 0;
+        }
+
+        /* Section Styling */
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ph-scale {
+            background: rgba(255, 238, 88, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* pH Bar Styling */
+        .ph-bar {
+            display: flex;
+            height: 30px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .acidic {
+            flex: 6;
+            background: linear-gradient(to right, red, orange);
+            position: relative;
+        }
+
+        .neutral {
+            flex: 1;
+            background-color: green;
+            position: relative;
+        }
+
+        .basic {
+            flex: 6;
+            background: linear-gradient(to right, lightblue, purple);
+            position: relative;
+        }
+
+        .label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        .acidic .label {
+            left: 0;
+        }
+
+        .neutral .label {
+            left: 0;
+        }
+
+        .basic .label {
+            left: 0;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        th {
+            background-color: rgba(0, 188, 212, 0.8);
+        }
+
+        td {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Button Style */
+        .btn {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Acids, Bases and Salts</h1>
+
+    <!-- Section 1: Introduction -->
+    <div class="section">
+        <h2>Introduction</h2>
+        <p><strong>Acids:</strong> Sour substances that turn blue litmus red (e.g., vinegar).</p>
+        <p><strong>Bases:</strong> Bitter substances that turn red litmus blue (e.g., baking soda).</p>
+        <p><strong>Salts:</strong> Formed from the neutralization of acids and bases (e.g., table salt).</p>
+    </div>
+
+    <!-- Section 2: Properties of Acids and Bases -->
+    <div class="section">
+        <h2>Properties of Acids and Bases</h2>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Acids</th>
+                <th>Bases</th>
+            </tr>
+            <tr>
+                <td>Taste</td>
+                <td>Sour</td>
+                <td>Bitter</td>
+            </tr>
+            <tr>
+                <td>Litmus Test</td>
+                <td>Turns blue litmus red</td>
+                <td>Turns red litmus blue</td>
+            </tr>
+            <tr>
+                <td>pH Value</td>
+                <td>Less than 7</td>
+                <td>More than 7</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Section 3: pH Scale -->
+    <div class="section">
+        <h2>The pH Scale</h2>
+        <div class="ph-scale">
+            <div class="ph-bar">
+                <div class="acidic">
+                    <span class="label">0-6: Acidic</span>
+                </div>
+                <div class="neutral">
+                    <span class="label">7: Neutral</span>
+                </div>
+                <div class="basic">
+                    <span class="label">8-14: Basic</span>
+                </div>
+            </div>
+        </div>
+        <p><strong>Examples:</strong> Lemon juice (pH 2), Water (pH 7), Soap (pH 9)</p>
+    </div>
+
+    <!-- Section 4: Real-World Applications -->
+    <div class="section">
+        <h2>Real-World Applications</h2>
+        <p><strong>Acids:</strong> Used in food preservation (like vinegar in pickling).</p>
+        <p><strong>Bases:</strong> Common in cleaning agents (like bleach).</p>
+        <p><strong>Salts:</strong> Used for seasoning food (table salt) and in chemical industries.</p>
+    </div>
+
+    <footer>
+        © 2024 Science Web Design Competition - Designed by Vansh Thakkar
+    </footer>
+
+</body>
+</html>
